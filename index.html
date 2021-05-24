@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação - TabaJogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a id="logo" href="http://127.0.0.1:5500/Imersao%20Dev/aula-04-05/index.html">Taba<span class="flix_" id="logo-header">Jogos</span></a>
+            <a class="button" id="entrar" href="http://127.0.0.1:5500/Imersao%20Dev/aula-04-05/index.html">Entrar</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="top-content">
+                <h1 id="taba">Classificação <p class="taba">Taba<span class="taba flix_" id="logo-title">Jogos</span><img class="taba" id="boll-title" src="./assets/bola.svg" alt=""></p></h1>
+                <div class="include">
+                    <div class="label-input">
+                        <div id="player-include">
+                            <label for="player">Insira um time/jogador:</label>
+                            <input type="text" 
+                                id="player" 
+                                name="player"
+                                placeholder="Digite o nome aqui"
+                                autofocus>
+                        </div>
+                    </div>
+                    <button class="button" onclick="Event.save()">Adicionar</button>
+                </div>
+            </section>
+            <section id="table-content">
+                <table id="table-player">
+                    <thead>
+                        <tr>
+                            <th>Jogadores</th>
+                            <th>Vitórias</th>
+                            <th>Empates</th>
+                            <th>Derrotas</th>
+                            <th>Pontuação</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="player-data">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Tabajara Software</p>
+    </footer>  
+</body>
+<script src="scripts.js"></script>
+</html>
